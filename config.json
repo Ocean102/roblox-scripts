@@ -2,5 +2,5 @@
   "version": "1.2.5",
   "keyLength": 125,
   "charSet": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
-  "domain": "https://ocean102.github.io/key/%s",
+  "domain": "https://ocean102.github.io/key/%s"
 }
