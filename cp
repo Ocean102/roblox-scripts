@@ -1854,6 +1854,7 @@ end))
 end)
 if bd then
 getgenv().SimpleSpyExecuted=true
+task.delay(math.random(0.5738929354, 1.57812589789235), toggleSpyMethod)
 else
 shutdown()
 ErrorPrompt("An error has occured:\n"..rawtostring(be))
