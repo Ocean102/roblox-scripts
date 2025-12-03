@@ -1,0 +1,8 @@
+local Path = {}
+Path.__index = Path
+function Path.new() return setmetatable({ segments = {} }, Path) end
+function Path:__index(key) if key ~= "_prefix" and key ~= "segments" then local new = Path.new() for _, v in ipairs(self.segments) do table.insert(new.segments, v) end table.insert(new.segments, key) return new end return rawget(self, key) end
+function Path:__tostring() return table.concat(self.segments, "/") end
+local path = Path.new()
+
+return path
